@@ -1,0 +1,166 @@
+.form__cita{
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+    background: #efefef;
+    padding: 1% 0% 5% 0%;
+    border-radius: 0;
+    box-shadow: none;    
+}
+
+.title__form__cita{
+    color: #DBB569;
+    font-size: 3.2rem;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 15%;
+}
+
+.formulario__cita .form-content, .form, .form-row {
+    width: 100%;
+    background: transparent;
+    padding: 1% 8% 0 8%;
+
+}
+.formulario__cita .form-row{
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+.formulario__cita .form-inputs{
+    padding: 0;
+}
+.formulario__cita .form-inputs,.formulario__cita .form-input,.formulario__cita .form-label{
+    color: #414141;
+    font-weight: 500;
+}
+.formulario__cita .form-input{
+    font-size: 1.2rem;
+    border-bottom: 1px solid #848484;
+    padding-left: 3%;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.formulario__cita .form-input::placeholder{
+    color: #848484;
+}
+
+.formulario__cita #form-contain-btn{
+    width: 100%;
+}
+
+.formulario__cita .form-input-btn{
+    background: #DBB569;
+    border: none;
+    padding: 1% 6%;
+    border-radius: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    float: right;
+    margin-top: 2%;
+    margin-right: -4%;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled {
+    color: #ccc;
+    display: none;
+}
+
+.react-datepicker {
+    font-family: 'Abel';
+    padding: 1px;
+}
+
+#showroom .input-error{
+    margin-top: 4.9rem;
+}
+
+.input-phne{
+    margin-top: 4.5rem;
+}
+
+#showroom .spinner_boton{
+    margin: auto;
+}
+
+@media (max-width: 767px){
+    .title__form__cita {
+        font-size: 2rem;
+        margin-top: 8%;
+        padding-left: 8%;
+        margin-bottom: 3%;
+    }
+
+    .formulario__cita .form-content, .form, .form-row {
+        padding: 1% 4.5% 0 4.5%;
+    }
+
+    .formulario__cita .form-input{
+        font-size: 1rem;
+        width: 100% !important;
+    }
+    .formulario__cita .form-inputs, .formulario__cita .form-input, .formulario__cita .form-label {
+        display: block;
+    }
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+    .formulario__cita #form-contain-btn {
+        width: 100%;
+        margin-bottom: 10%;
+    } 
+    .formulario__cita .form-input-btn {
+        font-size: 1.5rem;
+        margin-right: 4%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+    .title__form__cita {
+        font-size: 2.5rem;
+    }
+    .formulario__cita .form-input {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .form__cita {
+        padding: 1% 0% 6% 0%;
+    }
+    #showroom .input-error {
+        margin-top: 3.5rem;
+        font-size: 12px;
+    }
+    .formulario__cita .form-input-btn {
+        font-size: 1.4rem;
+    }
+    .formulario__cita .form-row {
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .title__form__cita {
+        font-size: 4.5rem;
+    }
+    .formulario__cita .form-label{
+        font-size: 2rem;
+    }
+    .formulario__cita .form-input {
+        font-size: 1.7rem;
+    }
+    #showroom .input-error {
+        margin-top: 5.9rem;
+        font-size: 20px;
+    }
+    .input-phne{
+        margin-top: 5.5rem !important;
+    }
+    .formulario__cita .form-row {
+        margin-bottom: 7%;
+    }
+    .formulario__cita .form-input-btn {
+        font-size: 2.3rem;
+    }    
+}

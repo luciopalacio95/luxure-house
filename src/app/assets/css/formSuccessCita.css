@@ -1,0 +1,123 @@
+.formulario__cita .form-content-success {
+    padding: 0.5% 2%;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0%;
+    min-height: 300px;
+}
+
+.form-success-title{
+    font-family: 'Playfair Display', serif;
+    clear: both;
+    font-size: 2.6rem;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    animation-name: text-display;
+    animation-duration: 1.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.form-success-text{
+    font-size: 1.7rem;
+    border-radius: 5px;
+    text-align: center;
+    animation-name: text-display;
+    animation-duration: 1.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes text-display{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.footer-icon-pico{
+    width: 8%;
+}
+
+.i-left{
+    float: left;
+    transform: rotate(180deg);
+    animation-name: pico-left;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.i-right{
+    float: right;
+    animation-name: pico-right;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;}
+
+
+@keyframes pico-left{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes pico-right{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form-content-success {
+        width: 100%;
+        min-height: 205px !important;
+    }
+    .form-success-title {
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+    .form-success-text{
+        font-size: 1rem !important;
+        padding-bottom: 10px;
+        margin-top: 1%;
+    }
+    .footer-icon-pico {
+        width: 10%;
+    }
+
+}
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+    .form-success-title {
+        font-size: 2.1rem;
+    }
+    .form-success-text {
+        font-size: 1.4rem !important;
+        margin-top: 2%;
+    }
+    .formulario__cita .form-content-success {
+        min-height: 235px;
+    }   
+}
+
+@media screen and (min-width: 2200px) {
+    .form-success-title {
+        font-size: 3.5rem;
+    }
+    .form-success-text {
+        font-size: 2.3rem;
+        margin-top:2%;
+    } 
+    .formulario__cita .form-content-success {
+        min-height: 415px;
+    }   
+}
