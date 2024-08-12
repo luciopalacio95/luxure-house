@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import GaleryImage from '../common/GaleryImage';
+import GaleryImage from './galeryImage';
 import { PiEyeLight } from 'react-icons/pi';
 
 export default function CardItem(props) {
