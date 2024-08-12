@@ -27,7 +27,7 @@ export default function Banner() {
         <div className='slider-redes'>
           <p className='titulo__slider__home'>¡El Showroom más grande de latinoamérica!</p>
           <p className='subtitulo__slider__home'>Calidad, variedad de modelos, asesoramiento personalizado.</p>
-          <a href='/showroom' style={{'text-decoration': 'none'}}>
+          <a href='/showroom' style={{textDecoration: 'none'}}>
             <button className='slider-button' id='info-1'>Agendá una cita</button>
           </a>
           <div className='slider-icon-redes'>

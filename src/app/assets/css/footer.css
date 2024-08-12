@@ -60,6 +60,7 @@
     justify-content: center;
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: 4rem;
   }
   
   .footer-link-wrapper1 {
@@ -218,11 +219,11 @@
     width: 100%;
     background: #DBB569;
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
     margin-top: 3%;
   }
   .footer-text-coopiri{
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 400;
   }
   .afip-foot{

@@ -1,0 +1,191 @@
+.cards#sistema{
+    padding: 0 0 0;
+}
+#sistema .cards__wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 8% 3% 2% 0;
+    display: flex;
+    margin: 0 0 0px;
+}
+.collapse-css-transition {
+    transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-down {
+    fill: #011227;
+    transition: transform 600ms cubic-bezier(0, 1, 0, 1);
+    width: 100%;
+    height: 100%;
+    padding: 25%;
+}
+
+.sistema__wood span, .sistema__steel span{
+    background: #fffef2;
+    float: left;
+    width: 72px;
+    height: 70px;
+}
+
+.is-open {
+    transform: rotate(.5turn);
+}
+
+.sistema__galery{
+    width: 50%;
+    display: inline-block;
+    padding: 0 0 0 6%;
+}
+.sistema__information{
+    width: 49%;
+    text-align: right;
+    padding: 0 3% 0 0;
+}
+
+.sistema__wood button, .sistema__steel button{
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    width: 60%;  
+    transition: all 0.4s ease-out;
+    background:#bcad93;
+    color: #fffef2;
+    border: none;
+    height: 70px;
+    margin-bottom: 6.5%;
+}
+.sistema__wood button p, .sistema__steel button p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    padding: 12px 0;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    height: 70px;
+    width: 400px;
+    text-align: center;
+}
+
+.sistema__wood button.boton-open, .sistema__steel button.boton-open{
+    width: 90%;
+    transition: all 0.4s ease-out;
+    background:#dbb569;
+    height: 70px;
+}
+
+.lista__sistema{
+    padding-left: 18%;
+    list-style: none;
+    margin-bottom: 6%;
+}
+
+.lista__sistema li{
+    color: #011227;
+    font-size: 2.1rem;
+    text-align: left;
+}
+
+
+.sistema__galery .sistema__galeria__1, .sistema__galery .sistema__galeria__2, .sistema__galery .sistema__galeria__3{
+    position: relative;
+    min-height: 140px;
+}
+
+.sistema__image{
+    width: 385px;
+    margin: 1%;
+    height: auto;
+}
+.sistema__img__1{
+    filter: blur(1.5px) brightness(0.7);
+    width: 350px;
+}
+.sistema__img__2{
+    filter: blur(0px) brightness(1);
+    width: 490px;
+    position: absolute;
+    z-index: 2;
+    margin-top: -12%;
+    margin-left: 25%;
+}
+.sistema__img__3{
+    filter: blur(1.5px) brightness(0.7);  
+    margin-left: 6%;
+    width: 430px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .sistema__img__1 {
+        width: 310px;
+    }  
+    .sistema__img__2 {
+        width: 440px;
+        margin-top: -12%;
+        margin-left: 22%;
+    } 
+    .sistema__img__3 {
+        width: 380px;
+    } 
+    .sistema__wood button, .sistema__steel button, .sistema__wood button.boton-open, .sistema__steel button.boton-open, .sistema__wood span, .sistema__steel span {
+        height: 65px;
+    }
+    .sistema__wood button p, .sistema__steel button p {
+        font-size: 1.9rem;
+        width: 350px;
+        height: 65px;
+    }
+    .lista__sistema li {
+        font-size: 1.6rem;
+    }
+
+}
+@media screen and (max-width:767px){
+    #sistema .cards__wrapper {
+        display: block;
+        padding: 8% 4%;
+    }
+    .sistema__galery, .sistema__information {
+        width: 100%;
+        padding: 0;
+    }
+    .sistema__galery .sistema__galeria__1, .sistema__galery .sistema__galeria__2, .sistema__galery .sistema__galeria__3 {
+        min-height: 110px;
+    }
+    
+    .sistema__img__1 {
+        width: 275px;
+        margin-left: 7%;
+    }
+
+    .sistema__img__2 {
+        width: 100%;
+        margin-left: 0%;
+        padding-right: 1%;
+    }
+
+    .sistema__img__3 {
+        width: 275px;
+        margin-left: 7%;
+    }
+    
+    .sistema__wood button, .sistema__wood button.boton-open, .sistema__steel button, .sistema__steel button.boton-open {
+        width: 100%;
+        height: 65px;
+        margin-top: 10%;
+    }
+    .sistema__wood span, .sistema__steel span{
+        height: 65px;
+    }
+    .sistema__wood button p, .sistema__steel button p {
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 18px 0;
+    }
+    .lista__sistema {
+        padding-left: 6%;
+    }
+    .lista__sistema li {
+        font-size: 1.2rem;
+    }
+    #exept-title-sistemas::before, #exept-title-sistemas::after{
+        width: 12%;
+    }
+}

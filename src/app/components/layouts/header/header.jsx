@@ -2,8 +2,8 @@
 
 import NavBar from './navbar';
 
-export default function Header () {
+export default function Header (props) {
     return (
-      <NavBar />
+      <NavBar isHome={props.isHome} />
     );
 }

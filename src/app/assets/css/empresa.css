@@ -1,0 +1,144 @@
+#empresa{
+    padding: 0rem 0 0;
+}
+#empresa .cards__wrapper{
+    max-width: 100%;
+    /*background: url('../../assets/images/showroom/fondo_showroom.jpg');*/
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 8% 3%;
+    display: flex;
+    margin: 0 0 0px;
+}
+
+.collapse-css-transition {
+    transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-down {
+    fill: #011227;
+    transition: transform 600ms cubic-bezier(0, 1, 0, 1);
+    width: 100%;
+    height: 100%;
+    padding: 25%;
+}
+
+.empresa__somos span, .empresa__elegir span{
+    background: #fffef2;
+    float: left;
+    width: 72px;
+    height: 70px;
+}
+
+#empresa .cont-title-sections{
+    margin: 4rem 0 0 0;
+}
+
+.is-open {
+    transform: rotate(.5turn);
+}
+.empresa__somos button, .empresa__elegir button{
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    width: 90%;
+    transition: all 0.4s ease-out;
+    background:#bcad93;
+    color: #fffef2;
+    border: none;
+    height: 70px;
+    margin-bottom: 6.5%;
+}
+.empresa__somos button p, .empresa__elegir button p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    padding: 12px 0;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    height: 70px;
+    text-align: center;
+}
+
+.empresa__somos button.boton-open, .empresa__elegir button.boton-open{
+    width: 100%;
+    transition: all 0.4s ease-out;
+    background:#dbb569;
+    height: 70px;
+}
+
+.texto__empresa, .elegirnos__empresa li{
+    color: #011227;
+    font-size: 2.1rem;
+    padding: 0 2%;
+    text-align: left;
+}
+
+.elegirnos__empresa{
+    list-style: none;
+}
+
+.tu__empresa{
+    width: 50%;
+    padding: 0 4%;
+    min-height: 480px;
+}
+
+#exept-title-empresa::before, #exept-title-empresa::after{
+    width: 35%;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .texto__empresa, .elegirnos__empresa li {
+        font-size: 1.6rem;
+    }
+    .empresa__somos button, .empresa__elegir button, .empresa__somos button.boton-open, .empresa__elegir button.boton-open, .empresa__somos span, .empresa__elegir span {
+        height: 65px;
+    }
+    .empresa__somos button p, .empresa__elegir button p {
+        font-size: 1.9rem;
+        height: 65px;
+    }
+    .empresa__somos button, .empresa__elegir button {
+        width: 95%;
+        height: 65px;
+    }
+
+    #empresa .cards__wrapper{
+        padding: 10% 9.5%;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .tu__empresa {
+        width: 100%;
+        min-height: 280px;
+    }    
+    .empresa__somos button, .empresa__elegir button, .empresa__somos button.boton-open, .empresa__elegir button.boton-open, .empresa__somos span, .empresa__elegir span {
+        height: 65px;
+    }
+    #empresa .cards__wrapper {
+        background-position: center;
+        background-size: inherit;
+        display: block;
+        padding: 9% 0% 13%;
+    }    
+    .empresa__somos button p, .empresa__elegir button p {
+        font-size: 1.3rem;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .empresa__somos button, .empresa__elegir button {
+        width: 100%;
+    }
+    .texto__empresa,.elegirnos__empresa li {
+        font-size: 1.2rem;
+    }
+    #exept-title-empresa::before, #exept-title-empresa::after {
+        width: 8%;
+    }
+}

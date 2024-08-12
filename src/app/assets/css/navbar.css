@@ -146,7 +146,7 @@ ul.lista__modelos a {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 70vh;
+        min-height: 70vh;
         padding-bottom: 4rem;
         position: absolute;
         top: 70px;
@@ -186,6 +186,7 @@ ul.lista__modelos a {
 
     .nav-item {
         width: 100%;
+        height: auto;
     }
     .navbar-logo-icon, .navbar.active .navbar-logo .navbar-logo-icon{
         width: 50% !important;
@@ -233,6 +234,11 @@ ul.lista__modelos a {
         overflow-x: auto;
         overflow-y: scroll;
         margin-bottom: 5%;
+        position: relative;
+    }
+    #dropdown_modelo:hover ul.lista__modelos li {
+        display: block;
+        position: relative;
     }
     
     .slider-icon-redes-header{

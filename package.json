@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@kunukn/react-collapse": "^3.0.15",
+    "html-react-parser": "^5.1.12",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
     "react-responsive-carousel": "^3.2.23",
     "react-scroll": "^1.9.0",
-    "sharp": "^0.33.4"
+    "sharp": "^0.33.4",
+    "yet-another-react-lightbox": "^3.21.3"
   },
   "devDependencies": {
     "eslint": "^8",
