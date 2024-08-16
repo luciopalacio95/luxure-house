@@ -103,14 +103,15 @@ display: none;
 }
 
 ul.lista__modelos{
+    position: absolute;
     display: none;
     top: 100%;
-    left: 0;
     padding: 0;
     list-style: none;
-    margin-right: -5rem;
+    width: 19%;
 }
 ul.lista__modelos a {
+    float: none;
     line-height: 50%;
     display: block;
     color: #011227;
@@ -146,7 +147,6 @@ ul.lista__modelos a {
         display: flex;
         flex-direction: column;
         width: 100%;
-        min-height: 70vh;
         padding-bottom: 4rem;
         position: absolute;
         top: 70px;
@@ -228,6 +228,12 @@ ul.lista__modelos a {
     ul.lista__modelos{
         margin-right: 0;
     }
+
+    #dropdown_modelo:hover ul.lista__modelos{
+        width: 100%;
+        position: relative;  
+    }
+
     .slider-icon-redes-header{
         display: flex;
     }
