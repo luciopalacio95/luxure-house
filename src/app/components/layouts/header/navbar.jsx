@@ -130,7 +130,7 @@ function NavBar(props) {
                           onClick={closeMobileMenu}
                         >Todos
                         </Linka>
-                    : <Link href='/#models' className='nav-links' onClick={closeMobileMenu}>Inicio</Link>}
+                    : <Link href='/#models' className='nav-links' onClick={closeMobileMenu}>Todos</Link>}
                     </li>}
                   <li><Link href='/modelo/4010' onClick={closeMobileMenu}>Luxury 4010</Link></li>
                   <li><Link href='/modelo/4020' onClick={closeMobileMenu}>Luxury 4020</Link></li>

@@ -90,6 +90,7 @@
     }
     .footer-icon-pico {
         width: 10%;
+        height: auto;
     }
 }
 @media screen and (min-width: 1200px) and (max-width:1400px) {

@@ -54,15 +54,15 @@ export default function Validate(values){
     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
     //name
     if(!values.name.trim()){
-        errors.name = "ingrese un Nombre"
+        errors.name = 'ingrese un Nombre';
     }
     else if(values.name.length<3){
-        errors.name = "el Nombre es muy corto"
+        errors.name = 'el Nombre es muy corto';
     }
 
     //Email
     if(!values.email){
-        errors.email = "ingrese un Email"
+        errors.email = 'ingrese un Email';
     }
     else if (!pattern.test(values.email)) {
         errors.email = 'Email invalido';
@@ -70,45 +70,45 @@ export default function Validate(values){
 
     //province
     if(!values.province){
-        errors.province = "seleccione Provincia"
+        errors.province = 'seleccione Provincia';
     }
 
     //contact_from
     if(!values.contact_from){
-        errors.contact_from = "seleccione Horario de Contacto"
+        errors.contact_from = 'seleccione Horario de Contacto';
     }
 
     //area_code
     if(!values.area_code){
-        errors.area_code = "ingrese Código de área"
+        errors.area_code = 'ingrese Código de área';
     }
     else if(values.area_code[0] === 0){
-        errors.area_code = "Ingrese el código de area sin 0 al inicio"
+        errors.area_code = 'Ingrese el código de area sin 0 al inicio';
     }
     else if (!area_code_exist(values.area_code)){
-        errors.area_code = "El código de área no existe";
+        errors.area_code = 'El código de área no existe';
     }
 
     //phone
     if(!values.phone){
-        errors.phone = "ingrese Teléfono"
+        errors.phone = 'ingrese Teléfono';
     }
     else if(values.phone[0] == 1 && values.phone[1] == 5){
-        errors.phone = "Ingrese el numero sin 15 al inicio"
+        errors.phone = 'Ingrese el numero sin 15 al inicio';
     }
     else if(values.area_code.length === 2 && values.phone.length !== 8){
-        errors.phone = "El número es inválido (debe contar de 8 numeros)"
+        errors.phone = 'El número es inválido (debe contar de 8 numeros)';
     }
     else if(values.area_code.length === 3 && values.phone.length !== 7){
-        errors.phone = "El número es inválido (debe contar de 7 numeros)"
+        errors.phone = 'El número es inválido (debe contar de 7 numeros)';
     }
     else if(values.area_code.length === 4 && values.phone.length !== 6){
-        errors.phone = "El número es inválido (debe contar de 6 numeros)"
+        errors.phone = 'El número es inválido (debe contar de 6 numeros)';
     }
 
     //comment
     if(!values.comment.trim()){
-        errors.comment = "ingrese un Consulta"
+        errors.comment = 'ingrese un Consulta';
     }
 
     return errors;

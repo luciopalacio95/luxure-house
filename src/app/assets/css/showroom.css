@@ -1,0 +1,233 @@
+#showroom {
+    background: url('../../../../public/images/showroom/fondo_showroom.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#showroom .cards__wrapper{
+    padding: 5% 9%;
+    max-width: 100%;
+    display: flex;
+}
+
+.title__showroom{
+    color: #dbb569;
+    font-size: 4.7rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+    opacity: 0;
+}
+
+.title__showroom.active{
+    animation-name: move_texts_title;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+}
+
+@keyframes move_texts_title {
+    from{
+        opacity: 0;
+        transform: translate(0px, 50%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px, 0%);
+    }
+}
+
+
+.line__showroom{
+    background: #dbb569;
+    border: 1.5px solid #dbb569;
+    width: 11%;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.line__showroom.active {
+    animation-name: move_texts_line;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes move_texts_line {
+    from{
+        opacity: 0;
+        transform: translate(0px, 3000%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px, 0%);
+    }
+}
+
+
+.text__showroom{
+    font-family: 'Abel';
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 13%;
+    color: #FFFEF2;
+    opacity: 0;
+}
+
+.text__showroom.active {
+    animation-name: move_texts_text;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+}
+
+@keyframes move_texts_text {
+    from{
+        opacity: 0;
+        transform: translate(0px, 80%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px, 0%);
+    }
+}
+
+.img__showroom{
+    width: 30%;
+    height: auto;
+    margin: 15% 0px 1%;
+    display: block;
+    opacity: 0;
+}
+
+.img__showroom.active {
+    animation-name: move_texts_img;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+}
+
+@keyframes move_texts_img {
+    from{
+        opacity: 0;
+        transform: translate(0px, 400%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px, 0%);
+    }
+}
+
+.subtext__showroom{
+    text-align: center;
+    color: #FFFEF2;
+    font-size: 2rem;
+}
+
+#showroom .slider-button{
+    display: block;
+    margin: 2% auto 5%;
+}
+
+.tarjeta__showroom{
+    width: 50%;
+}
+
+.formulario__cita{
+    animation-name: move_form;
+    animation-iteration-count: 1;
+    animation-duration: 1.7s;
+    animation-timing-function: linear;
+    padding-left: 18%;
+}
+
+@keyframes move_form {
+    from{
+        opacity: 0;
+        transform: translate(130%, 0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0%, 0px);
+    }
+}
+.img__showroom__mobile{
+    display: none;
+}
+@media (max-width: 767px){
+    #showroom {
+        background: url('../../../../public/images/showroom/fondo_showroom_mobile.jpg');
+        overflow: scroll;
+    }
+    #showroom .cards__wrapper {
+        display: block;
+        padding: 5% 4%;
+        margin-bottom: 0;
+    }
+    .tarjeta__showroom {
+        width: 100%;
+    }
+    .title__showroom {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .text__showroom{
+        text-align: center;
+        margin-top: 7%;
+        font-size: 1.3rem;
+    }
+    .line__showroom {
+        width: 18%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1.4px solid #dbb569;
+        margin-top: 5%;
+    } 
+    .img__showroom{
+        display: none;
+    }
+    .formulario__cita{
+        padding-left: 0;
+        margin-top: 15%;
+    }
+    
+    .img__showroom__mobile{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+        align-items: center;
+        padding: 10% 25% 0%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+    .title__showroom {
+        font-size: 3.8rem;
+    }
+    .text__showroom {
+        font-size: 1.8rem;
+    }
+    .img__showroom {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .title__showroom {
+        font-size: 6.5rem;
+    }
+    #showroom .cards__wrapper{
+        margin: 8% 0 45px;
+    }
+    .text__showroom {
+        font-size: 3rem;
+    }
+    .img__showroom {
+        width: 24%;
+    }
+}

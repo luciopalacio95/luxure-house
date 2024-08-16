@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import { FaFacebookSquare, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import '../../assets/css/banner.css';
 
 import pc1 from '../../../../public/images/EC_Slider.jpg';
@@ -27,9 +29,11 @@ export default function Banner() {
         <div className='slider-redes'>
           <p className='titulo__slider__home'>¡El Showroom más grande de latinoamérica!</p>
           <p className='subtitulo__slider__home'>Calidad, variedad de modelos, asesoramiento personalizado.</p>
-          <a href='/showroom' style={{textDecoration: 'none'}}>
+
+          <Link href='/showroom' style={{textDecoration: 'none'}}>
             <button className='slider-button' id='info-1'>Agendá una cita</button>
-          </a>
+          </Link>
+          
           <div className='slider-icon-redes'>
             <a
               href='https://www.instagram.com/'

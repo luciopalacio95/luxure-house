@@ -29,6 +29,12 @@
     animation-iteration-count: 1;
 }
 
+
+.btn-back{
+    margin-top: 4rem !important;
+    margin-right: 0 !important;
+}
+
 @keyframes text-display{
     0%{
         opacity: 0;
@@ -93,9 +99,14 @@
     }
     .footer-icon-pico {
         width: 10%;
+        height: auto;
     }
-
+    .btn-back{
+        margin-top: 2rem !important;
+        margin-right: 0 !important;
+    }
 }
+
 @media screen and (min-width: 1200px) and (max-width:1400px) {
     .form-success-title {
         font-size: 2.1rem;

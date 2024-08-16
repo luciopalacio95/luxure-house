@@ -1,28 +1,37 @@
-import React from 'react';
+import Image from 'next/image';
 import '../../../assets/css/formSuccessCita.css';
-import icon from '/images/iconos/pico.svg';
+import icon from '../../../../../public/images/iconos/pico.svg';
+import Link from 'next/link';
 
 const FormSuccess = () => {
-    return (
+  return (
+    <>
       <div className='form-content-success'>
         <div className='form-success'>
-          <img
+          <Image
             src={icon}
+            alt='icon'
             className='footer-icon-pico i-right'
-            alt=''
-          /> 
+            width={55}
+            height={55}
+          />          
           <h5 className='form-success-title'>¡Gracias por confiar <br /> en nosotros!</h5>
           <p className='form-success-text'>En breve un asesor comercial se <br /> pondrá en contacto para brindarle <br /> más información.</p>
-          <img
+          <Image
             src={icon}
+            alt='icon'
             className='footer-icon-pico i-left'
-            alt=''
-          /> 
+            width={55}
+            height={55}
+          />
         </div>
       </div>
-            
-        
-    );
+
+      <Link href='/' className='form-input-btn btn-back'>
+        Inicio
+      </Link>
+    </>
+  );
 };
 
 export default FormSuccess;
