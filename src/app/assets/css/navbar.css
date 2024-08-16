@@ -132,8 +132,10 @@ ul.lista__modelos a {
     .NavbarItems {
         position: relative;
     }
-    .navbar, .navbar.active ,.navbar-container{
-        height: 75px;
+    .navbar, .navbar.active{
+        height: 100vh;
+        min-height: 75px;
+        overflow-y: auto; /* Permite desplazamiento en el menú */
     }
 
     .navbar.active .menu-icon{
