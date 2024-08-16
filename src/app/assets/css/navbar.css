@@ -109,7 +109,10 @@ ul.lista__modelos{
     padding: 0;
     list-style: none;
     width: 19%;
+    margin-top: -1rem;
+    background: #ffffffad;
 }
+
 ul.lista__modelos a {
     float: none;
     line-height: 50%;
@@ -132,10 +135,10 @@ ul.lista__modelos a {
     .NavbarItems {
         position: relative;
     }
-    .navbar, .navbar.active{
+    .navbar, .navbar.isOpenMobile{
         height: 100vh;
         min-height: 75px;
-        overflow-y: auto; /* Permite desplazamiento en el menú */
+        overflow: auto; /* Permite desplazamiento en el menú */
     }
 
     .navbar.active .menu-icon{

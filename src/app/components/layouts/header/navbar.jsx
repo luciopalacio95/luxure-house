@@ -45,7 +45,7 @@ function NavBar(props) {
   return (
     <>
       <IconContext.Provider value={{ color: '#373334' }}>
-        <div className={`navbar ${navbar && 'active'}`}>
+        <div className={`navbar ${navbar && 'active'} ${click && 'isOpenMobile'}`}>
           <div className='navbar-container container'>
             {props.isHome ?
               <Linka 
